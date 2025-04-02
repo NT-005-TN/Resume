@@ -1,0 +1,191 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, sans-serif; /* Мягкий шрифт */
+}
+
+body {
+  background-color: #f9f9f9; /* Светлый фон */
+  color: #333; /* Темно-серый текст */
+  line-height: 1.8; /* Увеличенная высота строки */
+  font-size: 16px; /* Базовый размер шрифта */
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Плавная тень */
+  border-radius: 8px; /* Закругленные углы */
+}
+
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  background-color: #0d47a1; /* Голубой акцент */
+  color: #fff;
+  border-radius: 8px; /* Закругленные углы */
+}
+
+.sidebar h2 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 18px; /* Уменьшенный размер заголовков */
+  font-weight: 500; /* Мягкая жирность */
+}
+
+.sidebar h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 16px; /* Размер подзаголовков */
+  font-weight: 500; /* Мягкая жирность */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  font-size: 14px; /* Уменьшенный размер текста */
+  font-weight: 400; /* Легкий текст */
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li i {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #fff; /* Белый цвет для иконок */
+}
+
+.skills-list .skill-level {
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.skills-list .beginner {
+  color: #F0FAAA; /* Светло-жёлто-зелёный для новичков */
+}
+
+.skills-list .basic {
+  color: #C8E6C9; /* Средне-зелёный для базовых навыков */
+}
+
+.skills-list .advanced {
+  color: #81C784; /* Тёмно-зелёный для опытных навыков */
+}
+
+.qualities-list li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.qualities-list i {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.qualities-list .fas.fa-circle {
+  color: #FF4500; /* Оранжевый круг */
+}
+
+.qualities-list .fas.fa-square {
+  color: #1E90FF; /* Синий квадрат */
+}
+
+.qualities-list .fas.fa-star {
+  color: #FFD700; /* Золотая звезда */
+}
+
+.qualities-list .fas.fa-diamond {
+  color: #8A2BE2; /* Фиолетовый ромб */
+}
+
+.qualities-list .fas.fa-heart {
+  color: #FF69B4; /* Розовое сердце */
+}
+
+.qualities-list .fas.fa-sun {
+  color: #FFD700; /* Желтое солнце */
+}
+
+.qualities-list .fas.fa-comment {
+  color: #00FA9A; /* Светло-зеленый комментарий */
+}
+
+.qualities-list .fas.fa-handshake {
+  color: #8B008B; /* Темно-фиолетовое рукопожатие */
+}
+
+.qualities-list .fas.fa-smile {
+  color: #FF6347; /* Оранжевая улыбка */
+}
+
+.qualities-list .fas.fa-hourglass {
+  color: #4682B4; /* Синие песочные часы */
+}
+
+.qualities-list .fas.fa-shield-alt {
+  color: #2F4F4F; /* Темно-серый щит */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  color: #444; /* Мягкий серый цвет текста */
+}
+
+.main-content h1 {
+  font-size: 28px; /* Увеличенный размер имени */
+  margin-bottom: 15px;
+  font-weight: 600; /* Мягкая жирность */
+  color: #0d47a1; /* Голубой акцент */
+}
+
+.main-content h2 {
+  font-size: 20px; /* Размер заголовков */
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-weight: 500; /* Мягкая жирность */
+  color: #0d47a1; /* Голубой акцент */
+}
+
+.main-content p {
+  margin-bottom: 15px;
+  font-size: 16px; /* Базовый размер текста */
+  font-weight: 400; /* Легкий текст */
+  color: #555; /* Мягкий серый цвет текста */
+}
+
+.main-content ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 16px; /* Размер текста в списках */
+  font-weight: 400; /* Легкий текст */
+  color: #555; /* Мягкий серый цвет текста */
+}
+
+.fa-map-marker-alt,
+.fa-birthday-cake {
+  margin-right: 5px;
+}
+
+/* Добавление адаптивности */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
